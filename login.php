@@ -1,0 +1,23 @@
+<?php 
+
+include 'conexao.php';
+include 'buscausuario.php';
+
+if (isset ($_POST["email"]) && $_POST["senha"]!= Null){
+
+ $resultado= buscaUsuario($conexao, $email, $senha);
+
+if ($resultado== NULL)
+	{
+	echo "Fracasso";
+	}
+else 
+
+	{
+	echo "Logado";
+	}
+};
+
+var_dump buscaUsuario($conexao, $email, $senha);
+
+?>

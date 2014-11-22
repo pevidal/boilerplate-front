@@ -1,0 +1,16 @@
+<?php
+include 'conexao.php';
+function buscaUsuario ($conexao, $email, $senha)
+
+{
+
+
+	$query= "select * from where email='{$email}' and senha='{$senha}'";
+	$result = mysqli_query($conexao,$query);
+
+	return mysqli_fetch_assoc ($result);
+	
+
+}
+
+?>

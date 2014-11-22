@@ -1,0 +1,56 @@
+
+.isErro
+{
+
+border: 1px solid red;
+
+}
+
+.login
+{
+
+	width: 500 px;
+	margin: 0 auto;
+	border: 1 px solid #333;
+	padding: 20 px
+
+}
+
+.login-email, .login-pass, .input-text
+{
+
+	font-size: 14 px;
+	padding: 10 px;
+	width: 30 px;
+	display: block;
+	border: 1 px solid #000;
+	margin-button: 20 px;
+
+}
+
+.button
+
+{
+	width: 200px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #00FF44;
+	color: #FFF;
+}
+
+.title
+
+{
+text-align: center;
+}
+
+
+
+
+
+
+
+
+

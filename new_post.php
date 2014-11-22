@@ -1,0 +1,28 @@
+<?php include 'header.tpl.php'; 
+    
+?>
+
+<h1 class="title">Novo Post</h1>
+<form class="newpost">
+	<label>
+	<input class="input-text" name="title" type="text" placeholder="Título">
+	<?php
+	if (isset ($_GET[msgerro]))
+	{
+	 echo 'titulo não informado';
+	}
+	?>
+	</label>
+	
+	<label>
+	<input class="input-text" name="description" type="text" placeholder="Descrição">
+	</label>
+
+	<label>
+	<input class="input-text" name="content" type="textarea" placeholder="Conteúdo do seu post">
+	</label>
+
+	<input class="button" type="submit" value="Postar">
+</form>
+
+<?php include 'footer.tpl.php'; ?>

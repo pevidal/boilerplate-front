@@ -2,7 +2,7 @@
 
 class Seo {
 
-	private static $title = 'TITLE DEFAULT';
+	private static $title = 'Pedro';
 	private static $desc_default = 'DESCRIPTION';
 	private static $url = 'DOMINIO_DO_SITE.com.br';
 	
@@ -24,15 +24,21 @@ class Seo {
 	private static function pg( $pg ) {
 		switch( $pg )
 		{				
-			case '404.html':
-				$arr['desc'] = 'Bla bla ' . self::$desc_default;
-				$arr['title'] = 'Bla bla - ' . self::$title;
+			case '404.php':
+				$arr['desc'] = 'Erro ' . self::$desc_default;
+				$arr['title'] = 'Erro - ' . self::$title;
 				$arr['canonical'] = self::getUrl() . '/interna.html';
 				break;
 				
 			case 'home':
 				$arr['desc'] = 'Bla bla ' . self::$desc_default;
 				$arr['title'] = self::$title;
+				$arr['canonical'] = self::getUrl();
+				break;
+
+			case 'contato.php':
+				$arr['desc'] = 'Pedro ' . self::$desc_default;
+				$arr['title'] = 'Contato - ' . self::$title;
 				$arr['canonical'] = self::getUrl();
 				break;
 
