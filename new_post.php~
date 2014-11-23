@@ -1,5 +1,5 @@
 <?php include 'header.tpl.php'; 
- include 'grava_post.php';     
+    
 ?>
 
 <h1 class="title">Novo Post</h1>
